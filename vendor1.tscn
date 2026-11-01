@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://di8jtalvffynf"]
+
+[ext_resource type="Texture2D" uid="uid://ch4thnd7jwmm2" path="res://assets/sprites/Pixel Crawler - Free Pack/Entities/Npc's/Citizen_F/Peasant_A/Idle/Idle-Sheet.png" id="1_qpgje"]
+[ext_resource type="Script" uid="uid://c1gkpwj0rl4un" path="res://vendor_1.gd" id="1_riyea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_riyea"]
+atlas = ExtResource("1_qpgje")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_81klp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_riyea")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riyea"]
+size = Vector2(111, 107)
+
+[node name="Vendor1" type="CharacterBody2D" unique_id=1061349840]
+z_index = 10
+script = ExtResource("1_riyea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=179206362]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=115115367]
+position = Vector2(2.0000007, -6.0000005)
+scale = Vector2(0.85546875, 0.85546875)
+sprite_frames = SubResource("SpriteFrames_81klp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=155861915]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1209397867]
+position = Vector2(5.5, -2.5)
+shape = SubResource("RectangleShape2D_riyea")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

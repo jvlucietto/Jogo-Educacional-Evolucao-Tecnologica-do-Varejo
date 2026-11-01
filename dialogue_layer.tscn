@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dvte3oj8dsq7h"]
+
+[ext_resource type="Script" uid="uid://gf332hs8mwww" path="res://dialogue_box.gd" id="1_sasex"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ginlo"]
+font_size = 32
+
+[node name="DialogueLayer" type="CanvasLayer" unique_id=852931856]
+
+[node name="DialogueBox" type="Control" parent="." unique_id=825960039]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+script = ExtResource("1_sasex")
+
+[node name="ColorRect" type="ColorRect" parent="DialogueBox" unique_id=1114376160]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="DialogueBox" unique_id=1186104863]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 69.0
+offset_top = 13.0
+offset_right = 69.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.885, 0.885)
+label_settings = SubResource("LabelSettings_ginlo")
+autowrap_mode = 3
+
+[node name="staticLabel" type="Label" parent="DialogueBox" unique_id=1603151120]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -45.0
+offset_right = 132.20337
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.885, 0.885)
+text = "[E] Continuar"
+label_settings = SubResource("LabelSettings_ginlo")
+horizontal_alignment = 2
+autowrap_mode = 3

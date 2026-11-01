@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dxflpgcjkgxtk"]
+
+[ext_resource type="Script" uid="uid://c1gkpwj0rl4un" path="res://vendor_1.gd" id="1_0q65b"]
+[ext_resource type="Texture2D" uid="uid://do2d0ad11dli7" path="res://assets/sprites/Character/smartphone.png" id="2_0q65b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mctaf"]
+size = Vector2(11.250002, 23.75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8nlc"]
+atlas = ExtResource("2_0q65b")
+region = Rect2(0, 0, 533, 980)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_81klp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8nlc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riyea"]
+size = Vector2(16, 37.8125)
+
+[node name="Vendor1" type="CharacterBody2D" unique_id=1061349840]
+z_index = 9
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_0q65b")
+dialogue_id = "mercado4"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=179206362]
+position = Vector2(1.8749996, 9.374993)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_mctaf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=115115367]
+position = Vector2(2.0000038, 10)
+scale = Vector2(0.025311852, 0.025311856)
+sprite_frames = SubResource("SpriteFrames_81klp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=155861915]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1209397867]
+visible = false
+position = Vector2(2, 17.09375)
+shape = SubResource("RectangleShape2D_riyea")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

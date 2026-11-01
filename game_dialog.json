@@ -1,0 +1,26 @@
+{
+  "mercado1": [
+    "Olá, freguês! Seja bem-vindo à nossa vendinha.",
+    "Aqui as coisas são bem simples, tudo depende do esforço manual de nossos funcionários.",
+    "Para pagar suas compras, você pode usar moedas e notas de papel.",
+    "Se estiver sem dinheiro hoje, não tem problema! Eu anoto o seu nome e o valor das compras na minha caderneta para você pagar no final do mês."
+  ],
+  "mercado2": [
+    "Olá! Bem-vindo ao nosso supermercado!",
+    "As coisas por aqui ficaram muito mais rápidas e organizadas.",
+    "Agora nós usamos leitores de código de barras e caixas registradoras computadorizadas com sistemas de PDV para registrar seus produtos.",
+    "Além do dinheiro, você já pode pagar suas compras usando cartão de crédito ou débito com total segurança!"
+  ],
+  "mercado3": [
+    "Olá! Seja bem-vindo ao supermercado inteligente de última geração.",
+    "Aqui a tecnologia trabalha para economizar o seu tempo!",
+    "Você mesmo pode passar seus produtos e efetuar o pagamento nos nossos terminais de Self-Checkout.",
+    "Trabalhamos com controle de estoque em tempo real, etiquetas digitais e aceitamos pagamentos instantâneos via Pix, aproximação e carteiras digitais."
+  ],
+  "mercado4": [
+    "Bip... Bip... Olá, usuário! Eu sou a sua plataforma de E-Commerce e Mercado Digital.",
+    "Comigo, o mercado cabe literalmente na palma da sua mão, seja no computador ou no celular!",
+    "Você não precisa sair de casa: navegue pelo catálogo virtual, aproveite recomendações personalizadas por inteligência artificial e pague com um clique.",
+    "Suas compras são separadas no centro de distribuição e entregues na sua porta via delivery rápido. O futuro do varejo é digital!"
+  ]
+}
